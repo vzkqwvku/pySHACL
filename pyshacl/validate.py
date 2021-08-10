@@ -391,7 +391,7 @@ def validate(
     use_js = kwargs.pop('js', None)
     iterate_rules = kwargs.pop('iterate_rules', False)
     if "abort_on_error" in kwargs:
-        log.warning("Usage of abort_on_error is deprecated. Use abort_on_first instead.")
+        log.warning("Usage of abort_on_error is deprecated. Use abort_on_first instead. Test...")
         ae = kwargs.pop("abort_on_error")
         abort_on_first = bool(abort_on_first) or bool(ae)
     validator = None
